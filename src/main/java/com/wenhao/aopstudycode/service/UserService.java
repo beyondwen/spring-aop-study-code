@@ -24,4 +24,18 @@ public class UserService {
         userRepository.save(user);
         int x = 1 / i;
     }
+
+    /*public void add(int i) {
+        TransactionStatus begin = transcationUtil.begin();
+        try {
+            User user = new User();
+            user.setPassword(UUID.randomUUID().toString());
+            user.setUsername(UUID.randomUUID().toString());
+            userRepository.save(user);
+            int x = 1 / i;
+            transcationUtil.commit(begin);
+        } catch (Exception e) {
+            transcationUtil.rollBack(begin);
+        }
+    }*/
 }
