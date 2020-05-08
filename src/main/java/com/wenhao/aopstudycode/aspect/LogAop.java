@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 @EnableAspectJAutoProxy
 public class LogAop {
 
-    @Pointcut("execution(* com.wenhao.aopstudycode.service.OrderService.*(..))")
+    @Pointcut("execution(* com.wenhao.aopstudycode.service.OrderServiceImpl.*(..))")
     public void logRecAop() {
         System.out.println("切入点");
     }
